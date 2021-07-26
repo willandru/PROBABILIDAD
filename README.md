@@ -1,1 +1,2 @@
 # PROBABILIDAD
+setting everything UP¡
