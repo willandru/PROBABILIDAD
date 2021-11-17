@@ -1,0 +1,55 @@
+ESTOS DOS TEMAS ESTAN MUY RELACIONADOS ENTRE SI
+
+
+Una poblacion
+
+Dos poblaciones
+ .
+ .
+ .
+
+Estadisticos más importntes son los que corresponden a los momentos primeros: la media, la desviación estandar, la varianza, la curtosis y el sesgo.
+
+1 POBLACIÓN:
+
+En una poblacion uno quiere estimar, o encontrarn un valor aproximado, de forma estadistica, la MEDIA POBLACIONAL miu-----> Ẍ (X BARRA), y la varinaza o desviacion pobacional sigma² ------> S²
+
+2 POBLACIONES: miu_1, miu_2, sigma1^2, sigma2², 
+Uno puede hacer una prueba de diferencia de medias y encontrar los itervalos de confianza como las pruebas de hipotesis para eso.
+
+Cunado uno compara 2 caracteristicas, se hace por la resta .. para saber quien tienne la media mayor.
+Otra orma es hacer el cociente, esi es =1 son iguales, si es menor que uno quien es mayor que quien, etc.
+Aparecen estadisticos que habria que cosntruir
+
+PRUEBA DE HIPOTESIS:: INTERVALO DE CONFIANZA
+
+Intervalo: Que me diga con que probabilidad este intervalo contenga a miu
+ P( miu E I) = { 90% , 95% , 99%
+ I: se convierte en algo que se mueve aleatoriamente : intervalo
+ I: tienen limite inferior aleatorio, y limite superior aleatorio. que dependen de la muestra . aleatoria. simple  m.a.s
+
+
+
+ARBOL DE FLUJO:
+
+
+¿SE CONOCE sigma?
+
+	SI:  ¿LA POBLACION ESTUDIADA ES DISTRIBUIDA NORMAL?
+
+			SI: LA distribuicion, o el estadistico de prueba es Z  ( el normal estandar)
+
+			NO: ¿EL TAMAÑO DE LA MUESTRA ERA >= 30?
+
+				SI: el estadistico de prueba es Z  ( el normal estandar)
+
+				NO: Utilize el metodo de BOOTSTRAP (se utiliza la muestra <= a 30 , con la que se generan otras submuestras de tamaño menor hasta que mejora la calidad del estadistico que esta construyendo)
+
+	NO: ¿LA POBLACION ESTUDIADA ES DISTRIBUIDA NORMAL?
+			SI: Utilice el estadistico t (t-student)
+
+			NO: ¿EL TAMAÑO DE LA MUESTRA ERA >= 30?
+
+				SI: Utilice el estadistico t (t-student)
+
+				NO: Utilice métodos no paramétricos
