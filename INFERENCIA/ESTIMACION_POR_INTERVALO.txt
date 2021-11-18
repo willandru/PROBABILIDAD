@@ -1,0 +1,51 @@
+
+EVALUACION DE ESTIMADORES ---> NO LO SALTAMOS (CAP 12)
+
+ESTIMACION POR INTERVALOS (CAP 13)
+
+Uno tiene una poblacion X, (F.D), que depende de un conjunto de parametros . Se tomma una muestra aleatoria de la poblacion simple.
+
+Toma un valor entre 0 y 1, es el nivel de precision de l aestimacion
+
+::::::
+
+ENTONCENS , TENEMOS:
+
+X~N(miu, sigma²)   sigma=conocida
+m.a.s de X: X1, X2, ..., Xn
+
+EEL ESTIMADOR NATURAL DE MIU ES x BARRA
+
+Y X barra tienen 2 caracteristicas
+
+ẍ = x barra
+
+1. E(ẍ)= miu
+2. Var(Ẍ)= sigma²/n
+
+Usaremos Ẍ para calcular miu
+
+entonces estandarizamos:
+
+(ẍ-miu)/(sigma/sqrt(miu)) = Z~ N(u,1) = *El estadistico
+
+Intervalo de confianza para miu con onvel de confianza 1-alfa --> (0<alfa<1) (llamado intervalo de confianza al 100(1-alfa)%)
+
+( Ẍ - Z_ alfa/2 * (sigma/sqrt(miu)) ,  Ẍ - Z_ alfa/2* (sigma/sqrt(miu))) 
+
+INTERVALO PARA miu CON sigma² conocida
+-X~N(miu, sigma²)
+- m.a.s
+- Estadistico: T(X1,X2,...,Xn)= (ẍ-miu)/(sigma/sqrt(miu))  ---> N(0,1)
+
+-Intervalo estimador:
+
+1-alfa = P(l<= T <= u)
+	= P(Z_alfa/2 <= T <= Z_1-alfa/2)
+	= P(-Z_1-alfa/2 <= (ẍ-miu)/(sigma/sqrt(n) <= Z_1-alfa/2) por simetría
+	= P((-Z_1-alfa/2)*sigma/sqrt(n) <= Ẍ-miu  <= (Z_1-alfa/2)*sigma/sqrt(n))
+	= P(ẍ-(Z_1-alfa/2)*sigma/sqrt(n) <= miu <= ẍ+(Z_1-alfa/2)*sigma/sqrt(n))
+
+	Por tanto, el intervalo de confianza (1-alfa)% para miu, con una muestra aleatoria simple X1,X2,..,Xn DE UNA POBLACIÓN NORMAL X~N(miu, sigma²) es:
+
+	[ẍ-(Z_1-alfa/2)*sigma/sqrt(n), ẍ+(Z_1-alfa/2)*sigma/sqrt(n)]
