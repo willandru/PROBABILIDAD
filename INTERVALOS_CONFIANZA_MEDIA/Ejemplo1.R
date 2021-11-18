@@ -1,4 +1,4 @@
-## Varianza σ2 (Conocida), Media μ (Desconocida)
+## Varianza σ2 (Conocida), Media μ (Desconocida)-->NORMAL ESTANDAR
 ##POBLACION NORMAL
 ###EJEMPLO 1:
 # De una cierta población se ha extraído una muestra de 64 individuos, cuyo
